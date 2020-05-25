@@ -1,9 +1,7 @@
 # Use the httpd-parent image as base
 FROM quay.io/redhattraining/httpd-parent
 
-EXPOSE 8080
-
-LABEL io.openshift.expose-services="8080:http"# Change the port to 8080
+# Change the port to 8080
 EXPOSE 8080
 
 # Labels consumed by OpenShift
